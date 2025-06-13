@@ -29,8 +29,8 @@ function FetchData(){
 }
 
 // render function
-function RenderData(project){
-    project.forEach(element => {
+function RenderData(projectS){
+    projectS.forEach(element => {
         // 1- create elemnt
         const card = document.createElement("div");
         card.className ="cards";

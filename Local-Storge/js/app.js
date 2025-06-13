@@ -30,7 +30,8 @@ function addItem() {
   itemInput.value = "";
 
   //local storge**
-  setLocalStorage(items);
+  //setLocalStorage(items);
+  setLocalStorage();
   updateListDisplay();
   
 }
@@ -90,11 +91,13 @@ function switchStatus(index) {
 }
 
 //local storge**
-function setLocalStorage(items) {
+/*function setLocalStorage(items) {
   const stringifiedItems = JSON.stringify(items);
   localStorage.setItem("shoppingList", stringifiedItems);
+}*/
 
-  /*localStorage.setItem("shoppingList",JSON.stringify(items));*/
+function setLocalStorage() {
+  localStorage.setItem("shoppingList",JSON.stringify(items));
 }
 
 //local storge**
