@@ -1,0 +1,14 @@
+npm init -y
+
+npm i express
+npm i axios 
+npm i bcrypt
+npm i dotenv
+npm i cors
+
+npm i jsonwebtoken
+npm i pg
+
+npm install --save-dev jest supertest
+
+npm install -g nodemon

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/IndexStyle.css'>
+
+</head>
+<body >
+    <nav class="navbar">
+        <ul>
+            <li><a href="searchs">🔍 Search Recipes</a></li>
+            <li><a href="randoms">🎲 Random Recipe</a></li>
+            <li><a href="favorites">❤️ Favorites</a></li>
+        </ul>
+    </nav>
+
+    <div class="register-container">
+        <h2>Log In</h2>
+        <form id="register-form" action="/login" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+        
+    <script src="js/LoginApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* General Page Style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3bf73;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #e67e22;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #d35400;
+}
+
+/* Cards Container */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#favorites-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card Style */
+.cards {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+  width: 100%;
+  height: 213px;
+  object-fit: cover;
+}
+
+/* Content Inside Card */
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #e67e22;
+}
+
+.card-content p {
+  margin: 8px 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Ingredients List Styling */
+.card-content ul {
+  padding-left: 20px;
+  margin: 8px 0 15px;
+  list-style-type: disc;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card-content ul li {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* Optional highlights */
+.card-content p strong {
+  color: #27ae60;
+}
+
+/* ✅ Highlight the second <ul> (typically ingredients) */
+.card-content p:nth-of-type(2) + ul {
+  border-left: 3px solid  #27ae60;
+  padding-left: 10px;
+}
+
+/* Save Button as Heart */
+.save-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.save-btn.saved {
+  background-color: #e74c3c;
+  color: white;
+}
+.save-btn:hover {
+  color: #e74c3c;
+}
+
+/* delete button */
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* textarea */
+.card-content textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.card-content textarea:focus {
+  outline: none;
+  border-color: #e67e22;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.4);
+}
+
+textarea#messageli {
+  height: 139px;
+  width: 166px;
+}
+
+textarea#message {
+  height: 157px;
+  width: 99.9%;
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.update-btn:hover {
+  background-color: #219150;
+  transform: scale(1.02);
+}
+
